@@ -1,0 +1,21 @@
+<!-- views/testView.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>bussApp</title>
+</head>
+
+<body id="home">
+	<h1>What bussses are there next to me</h1>
+	<ul>
+		<%
+		postCodeStuff.forEach((message) => { %>
+		<li><b><%= message %></b></li>
+	<% });
+	%>
+			
+	</ul>
+</body>
+</html>

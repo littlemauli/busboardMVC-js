@@ -9,7 +9,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 app.get('/', testController.getTestData);
 app.get('/otherData', testController.getSecondTestData);
+app.get('/postcode/:postcode', testController.getBussesForPostcode)
 
 app.listen(port, () => {
-	console.log(`app is listening to port ${port}`);
+	console.log(`app is listening to the port ${port}`);
 });
