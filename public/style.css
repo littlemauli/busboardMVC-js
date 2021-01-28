@@ -1,0 +1,26 @@
+body {
+    padding: 50px;
+    background:  #393939;
+	font-family: 'Roboto' !important;
+    overflow-x: hidden;
+    color: #f5f8f2;
+    font-size: 20px;
+    text-align: left;
+}
+  
+
+  h1 {
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    color: #65CD00;
+   
+  }
+
+  footer{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #65CD00;
+  }

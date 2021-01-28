@@ -1,21 +1,30 @@
-<!-- views/testView.ejs -->
+<!-- message/busDisplay.ejs -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>bussApp</title>
+	<link rel="stylesheet" href= "/style.css" >
+	
 </head>
 
 <body id="home">
-	<h1>What bussses are there next to me</h1>
+	
+	<h1>Busses at the stops next to me</h1>
 	<ul>
 		<%
-		postCodeStuff.forEach((message) => { %>
-		<li><b><%= message %></b></li>
-	<% });
-	%>
-			
+		allBussesAndTimes.forEach((person) => { %>
+			<li><b><%= person.showTestData() %></b></li>
+			<br>
+		<% });
+		%>
+		
 	</ul>
+
+
 </body>
+<footer>
+	<p> If you need more information please contact your local bus service</p>
+</footer>
 </html>

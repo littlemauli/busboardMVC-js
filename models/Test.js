@@ -1,11 +1,12 @@
 class Test{
-	constructor(name, id) {
-		this.name = name;
-		this.id = id;
+	constructor(lineName, busStop, busTimes) {
+		this.lineName = lineName;
+		this.busStop = busStop;
+		this.busTimes = busTimes
 	}
 
 	showTestData() {
-		return this.name + ", id: " + this.id; 
+		return  "Bus " + this.lineName + " arrives at this stop " + this.busStop + " at theses times : " + this.busTimes; 
 	};
 
 	editName(newName) {
@@ -13,4 +14,4 @@ class Test{
 	}
 };
 
-module.exports = Test;
+//module.exports = Test;
